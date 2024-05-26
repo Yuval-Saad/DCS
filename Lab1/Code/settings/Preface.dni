@@ -1,0 +1,93 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[DebugChecksum]
+Checksum=-287469628
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[InterruptLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[Breakpoints2]
+Bp0=_ 1 "STD_CODE2" "{$PROJ_DIR$\LAB1-20240519T074049Z-001\LAB1\Preface LAB1 - code\main.c}.23.3" 0 0 1 "" 0 ""
+Count=1
+[Interrupts]
+Enabled=1
+[MemoryMap]
+Enabled=0
+Base=0
+UseAuto=0
+TypeViolation=1
+UnspecRange=1
+ActionState=1
+[Trace1]
+Enabled=0
+ShowSource=1
+[State Storage]
+Control Register=0
+[Sequencer]
+Control Register=0
+NextState0=0
+NextState1=0
+[Action Register]
+Break=1
+State Storage=1
+[BreakpointUsageDialog]
+Placement=_ 479 375 1183 658
+[Breakpoints]
+Bp0=_ "STD_CODE" "Memory:0xC262" 0 0 0 0 "" 0 ""
+Bp1=_ "STD_CODE" "Memory:0xC2AA" 0 0 0 0 "" 0 ""
+Bp2=_ "STD_LOG" "Memory:0xC262" 0 0 0 0 "" 0 "" 0
+Bp3=_ "STD_LOG" "Memory:0xC2AA" 0 0 0 0 "" 0 "" 0
+Bp4=_ "STD_CODE" "{$PROJ_DIR$\LAB1-20240519T074049Z-001\LAB1\Preface LAB1 - code\main.c}.33.7" 1 0 0 0 "" 0 ""
+Count=5
+[FET]
+Clock mode=38
+Extended Clock mode=-1
+Secure Password=
+Extended Clock Control Enable=1
+Advanced Extended Clock Control=0
+Emulation mode=0
+Free running=0
+Shutting Down=3
+[Memory Dump]
+Start address=
+Lenghth=
+Address info=0
+Format=0
+Dump registers=0
+PC=0
+SP=0
+SR=0
+all registers=0
+File name=
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Aliases]
+Count=0
+SuppressDialog=0
+[CallStackLog]
+Enabled=0
+[DriverProfiling]
+Enabled=0
+Mode=0
+Graph=0
+Symbiont=0

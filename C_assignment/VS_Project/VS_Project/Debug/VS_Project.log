@@ -1,0 +1,10 @@
+﻿  main.c
+c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment\main.c(17): warning C4047: 'function': 'char **' differs in levels of indirection from 'char **[0]'
+c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment\main.c(17): warning C4024: 'show_menu': different types for formal and actual parameter 1
+c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment\main.c(21): warning C4013: 'gets' undefined; assuming extern returning int
+c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment\main.c(31): warning C4013: 'FillMatrix' undefined; assuming extern returning int
+c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment\main.c(61): warning C4013: 'strcmp' undefined; assuming extern returning int
+c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment\main.c(88): warning C4047: 'function': 'char **' differs in levels of indirection from 'char **[0]'
+c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment\main.c(88): warning C4024: 'show_menu': different types for formal and actual parameter 1
+c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment\main.c(5): warning C4101: 'clearTheBuffer': unreferenced local variable
+  VS_Project.vcxproj -> C:\Yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\C_assignment\VS_Project\Debug\VS_Project.exe

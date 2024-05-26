@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+      <FILENAME>main.c</FILENAME>
+      <LINE>19</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Return value ignored: 'getchar'.</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>4</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+      <FILENAME>main.c</FILENAME>
+      <LINE>25</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>6054</DEFECTCODE>
+    <DESCRIPTION>String 'input1' might not be zero-terminated.</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>4</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>3</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>5</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>6</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>7</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>9</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>10</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>11</LINE>
+        <COLUMN>6</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>This expression may not zero-terminate 'input1'</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>12</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>14</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>16</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Enter this loop, (assume '1')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>17</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>18</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>19</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>20</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Assume switch ( 'Selector' ) resolves to case 49: </MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>21</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>23</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>24</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>25</LINE>
+        <COLUMN>22</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'input1' is an Input to 'sscanf_s' (declared at c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h:2302)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>25</LINE>
+        <COLUMN>22</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'input1' is required to be zero-terminated by a SAL annotation on 'sscanf_s'</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+      <FILENAME>main.c</FILENAME>
+      <LINE>25</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>6001</DEFECTCODE>
+    <DESCRIPTION>Using uninitialized memory 'input1'.</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>4</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>3</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>5</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>6</LINE>
+        <COLUMN>8</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>7</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>9</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>10</LINE>
+        <COLUMN>5</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>11</LINE>
+        <COLUMN>6</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'input1' is not initialized</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>12</LINE>
+        <COLUMN>6</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>14</LINE>
+        <COLUMN>13</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>16</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Enter this loop, (assume '1')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>17</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>18</LINE>
+        <COLUMN>17</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>19</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>20</LINE>
+        <COLUMN>15</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Assume switch ( 'Selector' ) resolves to case 49: </MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>21</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>23</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>24</LINE>
+        <COLUMN>18</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>25</LINE>
+        <COLUMN>22</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'input1' is an Input to 'sscanf_s' (declared at c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h:2302)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>c:\yoni\לימודים\סמסטר ח\מבנה מחשבים ספרתיים\c_assignment</FILEPATH>
+        <FILENAME>main.c</FILENAME>
+        <LINE>25</LINE>
+        <COLUMN>22</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'input1' is used, but may not have been initialized</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT></DEFECTS>

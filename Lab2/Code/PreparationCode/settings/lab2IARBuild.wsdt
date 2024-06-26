@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>lab2Proj/Debug</Project><Project>lab2Them/Debug</Project></CurrentConfigs><CurrentProj>lab2Them</CurrentProj><OverviewSelected>0</OverviewSelected></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>117</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1875</ColumnWidth1><ColumnWidth2>500</ColumnWidth2><ColumnWidth3>125</ColumnWidth3></Build>
+    <Debug-Log><ColumnWidth0>20</ColumnWidth0><ColumnWidth1>2501</ColumnWidth1></Debug-Log><TerminalIO/></Static>
+    <Windows>
+      
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-30587-14077</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>lab2Proj</ExpandedNode><ExpandedNode>lab2Proj/Header</ExpandedNode><ExpandedNode>lab2Proj/Source</ExpandedNode><ExpandedNode>lab2Them</ExpandedNode><ExpandedNode>lab2Them/Header</ExpandedNode><ExpandedNode>lab2Them/Source</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-27283-14753</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\..\Users\yoni1\Downloads\209191063_209400654\209191063_209400654\IAR\source\main.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>313</SelStart><SelEnd>313</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\..\Users\yoni1\Downloads\209191063_209400654\209191063_209400654\IAR\header\api.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\..\Users\yoni1\Downloads\209191063_209400654\209191063_209400654\IAR\source\api.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>572</SelStart><SelEnd>572</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\..\Users\yoni1\Downloads\209191063_209400654\209191063_209400654\IAR\source\bsp.c</Filename><XPos>0</XPos><YPos>9</YPos><SelStart>1955</SelStart><SelEnd>1958</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\..\Users\yoni1\Downloads\209191063_209400654\209191063_209400654\IAR\source\halGPIO.c</Filename><XPos>0</XPos><YPos>3</YPos><SelStart>702</SelStart><SelEnd>712</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\..\..\..\..\..\Users\yoni1\Downloads\209191063_209400654\209191063_209400654\IAR\header\halGPIO.h</Filename><XPos>0</XPos><YPos>24</YPos><SelStart>1431</SelStart><SelEnd>1441</SelEnd></Tab><ActiveTab>5</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-072a0fb8><key>iaridepm.enu1</key></Toolbar-072a0fb8></Sizes></Row0></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>429</Bottom><Right>191</Right><x>-2</x><y>-2</y><xscreen>148</xscreen><yscreen>83</yscreen><sizeHorzCX>156780</sizeHorzCX><sizeHorzCY>149550</sizeHorzCY><sizeVertCX>204449</sizeVertCX><sizeVertCY>776577</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>81</Bottom><Right>946</Right><x>-2</x><y>-2</y><xscreen>948</xscreen><yscreen>83</yscreen><sizeHorzCX>1004237</sizeHorzCX><sizeHorzCY>149550</sizeHorzCY><sizeVertCX>156780</sizeVertCX><sizeVertCY>149550</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

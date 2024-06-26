@@ -1,0 +1,133 @@
+#include  "../header/api.h"    		// private library - API layer
+#include  "../header/halGPIO.h"     // private library - HAL layer
+
+char pressed;
+char timerEnded;
+
+
+void PrepareLCDState1(void){
+    lcd_clear();
+    lcd_home();
+    lcd_puts("Insert your word");
+}
+
+void WriteWord(void){
+    char howMuchCharsToKey [17] = {0,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3};
+    char KeyToChars [17][3] = {0 , "1G" , "2H" , "3I" , "CJ" , "4K" , "5L" , "6M" , "DN" , "7O" , "8P" , "9Q" , "ER" , "AST" , "0UV" , "BWX" , "FYZ"};
+    char lastChosen = 0;
+    char currIndex = 0;
+    char numOfletters = 0;
+    char line = 0;
+    timerEnded = 0;
+    pressed = 0;
+    EnableInterrupsFromTimer();
+    enableKeypad();
+    enterLPM(lpm_mode);
+    while (state == state1 && numOfletters<32){
+        if (numOfletters == 16 && line == 0){
+            line = 1;
+            lcd_home();
+            lcd_new_line;
+        }
+        if (lastChosen == 0){
+            startTimerFor1sec();
+            timerEnded = 0;
+            enterLPM(lpm_mode);
+            if (timerEnded){
+                recorder_idiom[numOfletters-1] = KeyToChars[pressed][currIndex];
+                lastChosen = 0;
+            }
+        }
+        else if(lastChosen != pressed){
+            recorder_idiom[numOfletters-1] = KeyToChars[lastChosen][currIndex];
+            currIndex = 0;
+            numOfletters++;
+            lastChosen = pressed;
+            lcd_putchar(KeyToChars[pressed][currIndex]);
+            rstTimerB();
+            timerEnded = 0;
+            enterLPM(lpm_mode);
+            if (timerEnded){
+                recorder_idiom[numOfletters-1] = KeyToChars[pressed][currIndex];
+                lastChosen = 0;
+            }
+        }
+        else if (lastChosen == pressed && (howMuchCharsToKey[pressed] == currIndex + 1)){
+            disableTimerB();
+            timerEnded = 0;
+            currIndex++;
+            lastChosen = 0;
+            lcd_cursor_left();
+            lcd_putchar(KeyToChars[pressed][currIndex]);
+            recorder_idiom[numOfletters-1] = KeyToChars[pressed][currIndex];
+            enterLPM(lpm_mode);
+        }
+        else{ // (lastChosen == pressed && howMuchCharsToKey[pressed] > currIndex + 1)
+            currIndex++;
+            lcd_cursor_left();
+            lcd_putchar(KeyToChars[pressed][currIndex]);
+            rstTimerB();
+            timerEnded = 0;
+            enterLPM(lpm_mode);
+            if (timerEnded){
+                recorder_idiom[numOfletters-1] = KeyToChars[pressed][currIndex];
+                lastChosen = 0;
+            }
+        }
+    }
+    DisableInterrupsFromTimer();
+    if (state == state1){
+        state = state0;
+    }
+}
+
+char parse (char num){
+    if (num == 14)
+        return 0;
+    if ((num == 1) || (num == 2) || (num == 3))
+        return num;
+    if ((num == 5) || (num == 6) || (num == 7))
+        return num - 1 ;
+    else return num-2;
+}
+
+void PromptTwoNums(char* firstNum , char* secondNum){
+    lcd_home();
+    lcd_new_line;
+    pressed = 0;
+    do {
+        enableKeypad();
+        enterLPM(lpm_mode);
+    }
+    while ((pressed>12 && pressed != 14) || (pressed%4)==0);
+    *firstNum = parse(pressed);
+    lcd_putchar((*firstNum) + '0');
+    lcd_cursor_right();
+    do {
+        enableKeypad();
+        enterLPM(lpm_mode);
+    }
+    while ((pressed>12 && pressed != 14) || (pressed%4)==0);
+    *secondNum = parse(pressed);
+    lcd_putchar((*secondNum) + '0');
+    return;
+}
+
+
+void PrepareLCDState2(void){
+    lcd_clear();
+    lcd_home();
+    lcd_puts("Insert 2 nums:");
+}
+
+void Merge(void){
+    char firstNum;
+    char secondNum;
+    disablePBsInterrupts();
+    PrepareLCDState2();
+    PromptTwoNums(&firstNum , &secondNum);
+
+
+    enablePBsInterrupts();
+
+}

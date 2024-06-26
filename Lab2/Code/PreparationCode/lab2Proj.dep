@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>2247046079</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\Header\app.h</file>
+      <file>$PROJ_DIR$\Header\api.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\Users\yoni1\Downloads\209191063_209400654\209191063_209400654\IAR\header\api.h</file>
+      <file>$PROJ_DIR$\Source\main.c</file>
+      <file>$PROJ_DIR$\Header\bsp_msp430x2xx.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\msp430g2553.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\lab2Proj.d43</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\Header\halGPIO.h</file>
+      <file>$PROJ_DIR$\Source\halGPIO.c</file>
+      <file>$PROJ_DIR$\Header\bsp_msp430x4xx.h</file>
+      <file>$PROJ_DIR$\Source\bsp.c</file>
+      <file>$PROJ_DIR$\Source\api.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\halGPIO.r43</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\Users\yoni1\Downloads\209191063_209400654\209191063_209400654\IAR\header\halGPIO.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.r43</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\Users\yoni1\Downloads\209191063_209400654\209191063_209400654\IAR\header\bsp_430G2553.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\Users\yoni1\Downloads\209191063_209400654\209191063_209400654\IAR\source\main.c</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\lab2Proj.pbd</file>
+      <file>$PROJ_DIR$\Debug\Obj\halGPIO.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\api.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.r43</file>
+      <file>$TOOLKIT_DIR$\inc\in430.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\api.r43</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\string.h</file>
+      <file>$TOOLKIT_DIR$\config\lnk430G2553.xcl</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp.r43</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\Users\yoni1\Downloads\209191063_209400654\209191063_209400654\IAR\header\app.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\Users\yoni1\Downloads\209191063_209400654\209191063_209400654\IAR\source\halGPIO.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\Users\yoni1\Downloads\209191063_209400654\209191063_209400654\IAR\source\api.c</file>
+      <file>$PROJ_DIR$\..\..\..\..\..\..\Users\yoni1\Downloads\209191063_209400654\209191063_209400654\IAR\source\bsp.c</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 7</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Source\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 18</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 1 11 4 6 26 32 0</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1 11 4 6 26 32 0</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\lab2Proj.d43</name>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 29 27 33 16 18 25</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Source\halGPIO.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 16</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 11 4 6 26 32 0</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 11 4 6 26 32 0</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Source\bsp.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 33</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 8</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 4 6 26 32</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 6 26 32</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Source\api.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 27</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 1 11 4 6 26 32 0</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1 11 4 6 26 32 0</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\..\Users\yoni1\Downloads\209191063_209400654\209191063_209400654\IAR\source\main.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 18</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 2 17 19 6 26 32 35 28 21 5 10 36 37 34 31 30</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 17 19 6 26 32 35 28 21 5 10 37 34 31 30</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Obj\lab2Proj.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 24 8 23 9</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\..\Users\yoni1\Downloads\209191063_209400654\209191063_209400654\IAR\source\halGPIO.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 16</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 17 19 6 26 32 35</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17 19 6 26 32 35</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\..\Users\yoni1\Downloads\209191063_209400654\209191063_209400654\IAR\source\api.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 27</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 2 17 19 6 26 32 35 28 21 5 10 36 37 34 31 30</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 17 19 6 26 32 35 28 21 5 10 37 34 31 30</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\..\..\..\..\Users\yoni1\Downloads\209191063_209400654\209191063_209400654\IAR\source\bsp.c</name>
+      <outputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 33</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 8</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICC430</name>
+          <file> 19 6 26 32</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19 6 26 32</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>XLINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

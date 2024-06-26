@@ -1,0 +1,77 @@
+#include  "../header/api.h"    		// private library - API layer
+#include  "../header/app.h"    		// private library - APP layer
+
+enum FSMstate state;
+enum SYSmode lpm_mode;
+
+void main(void){
+
+    static char data_matrix[M][N] = {
+        “An apple a day keeps the doctor away”,
+        “climb on the bandwagon”,
+        “Dot the i's and cross the t's”,
+        “He who pays the piper calls the tune”,
+        “The pen is mightier than the sword”,
+        “The pot calling the kettle black”,
+        “shed crocodile tears”,
+        “Close but no cigar”,
+        “Cut from the same cloth”,
+        “Strike while the iron’s hot”
+    };
+    static char recorder_idiom[32];
+
+    state = state0;  // start in idle state on RESET
+    lpm_mode = mode0;     // start in idle state on RESET
+
+    sysConfig();
+
+    lcd_init();
+    lcd_clear();
+
+
+
+  while(1){
+    switch(state){
+      case state0:
+        enterLPM(lpm_mode);
+        break;
+
+      case state1:
+        PrepareLCDState1();
+        enableTimerA1();
+        while(state == state1){
+            lastValueDiff = DispFreqFromInput(lastValueDiff);
+        }
+        disableTimerA1();
+        lcd_clear();
+        break;
+		 
+      case state2:
+        lcd_clear();
+        CountSec();
+        lcd_clear();
+        break;
+
+      case state3:
+         EnableTimerState3();
+         while(state == state3){
+             genBuzz();
+         }
+         DisableTimerState3();
+         break;
+                
+      case state4:
+        lcd_clear();
+        printBs();
+        lcd_clear();
+        break;
+		
+    }
+  }
+}
+  
+  
+  
+  
+  
+  

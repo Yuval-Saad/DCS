@@ -1,0 +1,203 @@
+#include  "../header/api.h"    		// private library - API layer
+#include  "../header/halGPIO.h"     // private library - HAL layer
+
+char pressed;
+char timerEnded;
+
+
+void PrepareLCDState1(void){
+    lcd_clear();
+    lcd_home();
+    lcd_puts("Insert your word");
+}
+
+void WriteWord(void){
+    char howMuchCharsToKey [17] = {0,2,2,2,2,2,2,2,2,2,2,2,2,3,3,3,3};
+    char KeyToChars [17][3] = {0 , "1G" , "2H" , "3I" , "CJ" , "4K" , "5L" , "6M" , "DN" , "7O" , "8P" , "9Q" , "ER" , "AST" , "0UV" , "BWX" , "FYZ"};
+    char lastChosen = 0;
+    char currIndex = 0;
+    char numOfletters = 0;
+    char line = 0;
+    timerEnded = 0;
+    EnableInterrupsFromTimer();
+    enableKeypad();
+    enterLPM(lpm_mode);
+    while (state == state1 && numOfletters<32){
+        if (numOfletters == 16 && line == 0){
+            line = 1;
+            lcd_home();
+            lcd_new_line;
+        }
+        if (lastChosen == 0){
+            startTimerFor1sec();
+            timerEnded = 0;
+            enterLPM(lpm_mode);
+            if (timerEnded){
+                recorder_idiom[numOfletters-1] = KeyToChars[pressed][currIndex];
+                lastChosen = 0;
+            }
+        }
+        else if(lastChosen != pressed){
+            recorder_idiom[numOfletters-1] = KeyToChars[lastChosen][currIndex];
+            currIndex = 0;
+            numOfletters++;
+            lastChosen = pressed;
+            lcd_putchar(KeyToChars[pressed][currIndex]);
+            rstTimerB();
+            timerEnded = 0;
+            enterLPM(lpm_mode);
+            if (timerEnded){
+                recorder_idiom[numOfletters-1] = KeyToChars[pressed][currIndex];
+                lastChosen = 0;
+            }
+        }
+        else if (lastChosen == pressed && (howMuchCharsToKey[pressed] == currIndex + 1)){
+            disableTimerB();
+            timerEnded = 0;
+            currIndex++;
+            lastChosen = 0;
+            lcd_cursor_left();
+            lcd_putchar(KeyToChars[pressed][currIndex]);
+            recorder_idiom[numOfletters-1] = KeyToChars[pressed][currIndex];
+            enterLPM(lpm_mode);
+        }
+        else{ // (lastChosen == pressed && howMuchCharsToKey[pressed] > currIndex + 1)
+            currIndex++;
+            lcd_cursor_left();
+            lcd_putchar(KeyToChars[pressed][currIndex]);
+            rstTimerB();
+            timerEnded = 0;
+            enterLPM(lpm_mode);
+            if (timerEnded){
+                recorder_idiom[numOfletters-1] = KeyToChars[pressed][currIndex];
+                lastChosen = 0;
+            }
+        }
+    }
+    DisableInterrupsFromTimer();
+    if (state == state1){
+        state = state0;
+    }
+
+}
+
+extern void PrepareLCDState1(void){
+
+}
+
+extern void Merge(void){
+
+}
+
+
+unsigned int CalcFreq(unsigned int end,unsigned int start){
+    return (SMCLKFREQ/(end-start));
+}
+
+void NumToString(char* str,int strLen , int num){
+  str[strLen-1] = '\0';
+  int i;
+  for (i=strLen-2;i>=0;i--){
+      if (num==0)
+          str[i] = ' ';
+      else{
+          str[i] = num%10 + '0';
+          num = num/10;
+      }
+  }
+}
+
+
+void CountSec(void){
+        char timeString[6];
+        SetTimeStrTo0(timeString);
+        while (state == state2){
+          lcd_home();
+          lcd_puts(timeString);
+          cursor_off;
+          WaitOneSec();
+          if(SampleSW()){
+            UpdateTime(timeString);
+          }
+        }
+        disable_TimerA0();
+        return;
+}
+
+void SetTimeStrTo0(char* timeString){
+  timeString[0] = '0';
+  timeString[1] = '0';
+  timeString[2] = ':';
+  timeString[3] = '0';
+  timeString[4] = '0';
+  timeString[5] = '\0';
+}
+
+void WaitOneSec(void){
+  setTimeTimer0(0xFFFF);
+  enable_TimerA0();
+  enterLPM(0);
+  enable_TimerA0();
+  enterLPM(0); 
+}
+
+
+void UpdateTime(char* timeString){
+  if(timeString[4] < '9'){
+    timeString[4] = timeString[4]+1;
+    return;
+  }
+  timeString[4] = '0';
+  if (timeString[3] < '5'){
+    timeString[3] = timeString[3] + 1;
+    return;
+  }
+  timeString[3] = '0';
+  if (timeString[1] < '9'){
+    timeString[1] = timeString[1] + 1;
+    return;
+  }
+  timeString[1] = '0';
+  if (timeString[0] < '9'){
+    timeString[0] = timeString[0] + 1;
+    return;
+  }
+  timeString[0] = '0';
+  return;
+}
+
+
+unsigned int mulByNewCoeff (unsigned int x){ //NewCoeff = 0.617, 0.1001
+    unsigned int tmp = x;
+    unsigned int sum = 0;
+    tmp = tmp >> 1;
+    sum = sum + tmp;
+    tmp = tmp >> 2;
+    sum = sum + tmp;
+    return sum;
+}
+
+
+unsigned int mulByCoeff(unsigned int x){ //coef = 1.466 = 1.0111
+    unsigned int tmp = x;
+    unsigned int sum = 0;
+    sum = tmp;
+    tmp = tmp >> 2;
+    sum = sum + tmp;
+    tmp = tmp >> 1;
+    sum = sum + tmp;
+    tmp = tmp >> 1;
+    sum = sum + tmp;
+    return sum;
+}
+
+
+
+void Wait09Sec (void){
+  setTimeTimer0(0xFFFF);
+  enable_TimerA0();
+  enterLPM(0);
+  setTimeTimer0(0xCCCC);
+  enable_TimerA0();
+  enterLPM(0);
+}

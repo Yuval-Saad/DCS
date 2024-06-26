@@ -1,0 +1,29 @@
+#ifndef _api_H_
+#define _api_H_
+
+#include  "../header/halGPIO.h"     // private library - HAL layer
+
+extern void PrepareLCDState1(void);
+extern void WriteWord(void);
+extern void PrepareLCDState2(void);
+extern void Merge(void);
+
+
+extern void CountSec(void);
+
+extern int DispFreqFromInput(int);
+unsigned int CalcFreq(unsigned int,unsigned int);
+void NumToString(char*,int,int);
+void SetTimeStrTo0(char*);
+void WaitOneSec(void);
+void UpdateTime(char*);
+void Wait09Sec (void);
+
+#endif
+
+
+
+
+
+
+

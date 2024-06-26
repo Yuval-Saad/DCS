@@ -1,0 +1,25 @@
+#ifndef _api_H_
+#define _api_H_
+
+#include  "../header/halGPIO.h"     // private library - HAL layer
+
+extern static char data_matrix[10][40];
+extern static char data_matrix_word_sizes[10][8];
+
+extern void PrepareLCDState1(void);
+extern void WriteWord(void);
+extern void Merge(void);
+
+void PrepareLCDState2(void);
+void PromptTwoNums(char*, char*);
+void DMAMerge(char*, char , char);
+
+
+#endif
+
+
+
+
+
+
+

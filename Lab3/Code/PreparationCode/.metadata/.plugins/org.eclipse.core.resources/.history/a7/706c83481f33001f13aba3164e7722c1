@@ -1,0 +1,69 @@
+#include  "../header/bsp_msp430x4xx.h"    // private library - BSP layer
+
+//-----------------------------------------------------------------------------  
+//           GPIO congiguration
+//-----------------------------------------------------------------------------
+void GPIOconfig(void){
+  
+  WDTCTL = WDTHOLD | WDTPW;		// Stop WDT
+   
+  // PushButtons Setup
+  PBsArrPortSel &= ~PBs0_2;
+  PBsArrPortDir &= ~PBs0_2;
+  PBsArrIntEdgeSel |= (PB0 + PB1);          // pull-up mode
+  PBsArrIntEdgeSel &= ~(PB2);         // pull-down mode
+  PBsArrIntEn |= PBs0_2;
+  PBsArrIntPend &= ~PBs0_2;            // clear pending interrupts
+
+  //LCD Setup
+   LCDDataArrPort      &= ~LCDDataEntries;
+   LCDDataArrPortDir   |= LCDDataEntries;
+   LCDDataArrPortSel   &= ~LCDDataEntries;
+   LCDCTLArrPortSel    &= ~LCDControlEntries;
+   LCDCTLArrPortDir    |= LCDControlEntries;
+   LCDCTLArrPort       &= ~LCDControlEntries;
+
+   //Keypad
+   KeysPortSel    &= ~(KEYPADOUT + KEYPADIN);
+   KeysPortDir    &= ~(KEYPADIN);
+   KeysPortDir    |= KEYPADOUT;
+   KeysPortOut    &= ~KEYPADOUT;
+
+
+   KeysIRQIntSel  &= ~KEYPADIRQ;
+   KeysIRQIntDir  &= ~KEYPADIRQ;
+   KeysIRQIntIes  |= (KEYPADIRQ);          // ??
+   KeysIRQIntIE   &= ~KEYPADIRQ;
+   KeysIRQIntPend &= ~KEYPADIRQ;
+
+  _BIS_SR(GIE);                     // enable interrupts globally
+}                             
+//------------------------------------------------------------------------------------- 
+//            Timers configuration
+//-------------------------------------------------------------------------------------
+void TIMERconfig(void){
+    TimerBCTL = TBSSEL_1 + TBCLR; //Configure ACLK (2^15 Hz) and clear. Timer is Halted.
+    TimerBCMP0CTL = 0; //set timer register 0 as a compare register
+} 
+
+//------------------------------------------------------------------------------------- 
+//            DMA configuration
+//-------------------------------------------------------------------------------------
+void DMAconfig(void){
+    DMACTL0 = DMA0TSEL_0 + DMA1TSEL_8;
+    DMA0SZ = 0x024;
+    DMA0CTL = DMADT_1 + DMASBDB + DMAEN + DMAIE + DMADSTINCR_3 + DMASRCINCR_3; // block mode , byte-to-byte , enable
+    DMA1SZ = 0x001;
+    DMA1CTL = DMADT_1 + DMASBDB + DMAIE; // block mode , byte-to-byte , enable
+    DMA1DA = (void (*)())&LEDsArrPort;
+    DMA1SA = (void (*)())&ledsValue;
+}
+           
+             
+
+ 
+             
+             
+            
+  
+

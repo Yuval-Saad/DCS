@@ -42,6 +42,7 @@ void main(void){
           break;
                 
       case state4:
+          MirrorByDMA();
           break;
 		
     }

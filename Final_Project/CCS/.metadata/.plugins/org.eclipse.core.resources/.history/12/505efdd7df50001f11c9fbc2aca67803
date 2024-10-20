@@ -1,0 +1,10 @@
+#include  "../header/api.h"    		// private library - API layer
+#include  "../header/halGPIO.h"     // private library - HAL layer
+
+void Manual_Sleep(void){
+    enterLPM();
+}
+
+void Joystick_Control(void){
+
+}

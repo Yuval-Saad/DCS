@@ -2880,3 +2880,474 @@ remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recomm
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project LAB3DCS ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'LAB3DCS.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LAB3DCS ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'LAB3DCS.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LAB3DCS ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'LAB3DCS.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LAB3DCS ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'LAB3DCS.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LAB3DCS ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'LAB3DCS.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LAB3DCS ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'LAB3DCS.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LAB3DCS ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../Source/api.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=16 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Yoni/IAR files/DCS/Lab3/Code/PreparationCode/LAB3DCS" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --advice:power=all --define=__MSP430FG4619__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Source/api.d_raw" --obj_directory="Source"  "../Source/api.c"
+
+>> Compilation failure
+Source/subdir_rules.mk:9: recipe for target 'Source/api.obj' failed
+"../Source/api.c", line 75: remark #2553-D: (ULP 14.1) Array index (involving "numOfletters") of type "int". Recommend using "unsigned int"
+"../Source/api.c", line 90: remark #2553-D: (ULP 14.1) Array index (involving "numOfletters") of type "int". Recommend using "unsigned int"
+"../Source/api.c", line 103: remark #2553-D: (ULP 14.1) Array index (involving "numOfletters") of type "int". Recommend using "unsigned int"
+"../Source/api.c", line 133: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../Source/api.c", line 140: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../Source/api.c", line 159: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../Source/api.c", line 204: warning #169-D: argument of type "const char *" is incompatible with parameter of type "char *"
+"../Source/api.c", line 177: remark #1535-D: (ULP 8.1) variable "numToWrite" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../Source/api.c", line 254: error #143: expression must have pointer-to-object type
+"../Source/api.c", line 272: warning #182-D: argument is incompatible with formal parameter
+"../Source/api.c", line 6: remark #1535-D: (ULP 8.1) variable "resetState1" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+1 error detected in the compilation of "../Source/api.c".
+gmake: *** [Source/api.obj] Error 1
+'Building file: "../Source/halGPIO.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=16 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Yoni/IAR files/DCS/Lab3/Code/PreparationCode/LAB3DCS" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --advice:power=all --define=__MSP430FG4619__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Source/halGPIO.d_raw" --obj_directory="Source"  "../Source/halGPIO.c"
+
+>> Compilation failure
+Source/subdir_rules.mk:23: recipe for target 'Source/halGPIO.obj' failed
+"../Source/halGPIO.c", line 19: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../Source/halGPIO.c", line 115: error #20: identifier "PBs0_2" is undefined
+"../Source/halGPIO.c", line 119: error #20: identifier "PBs0_2" is undefined
+"../Source/halGPIO.c", line 123: warning #515-D: a value of type "char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../Source/halGPIO.c", line 124: warning #515-D: a value of type "char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../Source/halGPIO.c", line 128: error #66: expected a ";"
+"../Source/halGPIO.c", line 142: warning #515-D: a value of type "char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../Source/halGPIO.c", line 153: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../Source/halGPIO.c", line 154: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../Source/halGPIO.c", line 191: error #20: identifier "Exit" is undefined
+"../Source/halGPIO.c", line 191: error #66: expected a ";"
+"../Source/halGPIO.c", line 215: warning #12-D: parsing restarts here after previous syntax error
+"../Source/halGPIO.c", line 168: remark #1538-D: (ULP 10.1) ISR PBs_handler calls function delay. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../Source/halGPIO.c", line 224: remark #1538-D: (ULP 10.1) ISR Keypad_handler calls function delay. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../Source/halGPIO.c", line 230: remark #1538-D: (ULP 10.1) ISR Keypad_handler calls function findKeyPressed. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+5 errors detected in the compilation of "../Source/halGPIO.c".
+gmake: *** [Source/halGPIO.obj] Error 1
+'Building file: "../Source/main.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=16 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Yoni/IAR files/DCS/Lab3/Code/PreparationCode/LAB3DCS" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --advice:power=all --define=__MSP430FG4619__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Source/main.d_raw" --obj_directory="Source"  "../Source/main.c"
+"../Source/main.c", line 4: remark #1535-D: (ULP 8.1) variable "state" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../Source/main.c", line 5: remark #1535-D: (ULP 8.1) variable "lpm_mode" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+'Finished building: "../Source/main.c"'
+ 
+'Building file: "../Source/bsp.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=16 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Yoni/IAR files/DCS/Lab3/Code/PreparationCode/LAB3DCS" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --advice:power=all --define=__MSP430FG4619__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Source/bsp.d_raw" --obj_directory="Source"  "../Source/bsp.c"
+"../Source/bsp.c", line 62: warning #515-D: a value of type "volatile unsigned char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+'Finished building: "../Source/bsp.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LAB3DCS ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../Source/api.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=16 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Yoni/IAR files/DCS/Lab3/Code/PreparationCode/LAB3DCS" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --advice:power=all --define=__MSP430FG4619__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Source/api.d_raw" --obj_directory="Source"  "../Source/api.c"
+
+>> Compilation failure
+Source/subdir_rules.mk:9: recipe for target 'Source/api.obj' failed
+"../Source/api.c", line 75: remark #2553-D: (ULP 14.1) Array index (involving "numOfletters") of type "int". Recommend using "unsigned int"
+"../Source/api.c", line 90: remark #2553-D: (ULP 14.1) Array index (involving "numOfletters") of type "int". Recommend using "unsigned int"
+"../Source/api.c", line 103: remark #2553-D: (ULP 14.1) Array index (involving "numOfletters") of type "int". Recommend using "unsigned int"
+"../Source/api.c", line 133: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../Source/api.c", line 140: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../Source/api.c", line 159: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../Source/api.c", line 204: warning #169-D: argument of type "const char *" is incompatible with parameter of type "char *"
+"../Source/api.c", line 177: remark #1535-D: (ULP 8.1) variable "numToWrite" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../Source/api.c", line 254: error #143: expression must have pointer-to-object type
+"../Source/api.c", line 272: warning #182-D: argument is incompatible with formal parameter
+"../Source/api.c", line 6: remark #1535-D: (ULP 8.1) variable "resetState1" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+1 error detected in the compilation of "../Source/api.c".
+gmake: *** [Source/api.obj] Error 1
+'Building file: "../Source/halGPIO.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=16 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Yoni/IAR files/DCS/Lab3/Code/PreparationCode/LAB3DCS" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --advice:power=all --define=__MSP430FG4619__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Source/halGPIO.d_raw" --obj_directory="Source"  "../Source/halGPIO.c"
+
+>> Compilation failure
+Source/subdir_rules.mk:23: recipe for target 'Source/halGPIO.obj' failed
+"../Source/halGPIO.c", line 19: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../Source/halGPIO.c", line 115: error #20: identifier "PBs0_2" is undefined
+"../Source/halGPIO.c", line 119: error #20: identifier "PBs0_2" is undefined
+"../Source/halGPIO.c", line 123: warning #515-D: a value of type "char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../Source/halGPIO.c", line 124: warning #515-D: a value of type "char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../Source/halGPIO.c", line 128: error #66: expected a ";"
+"../Source/halGPIO.c", line 142: warning #515-D: a value of type "char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../Source/halGPIO.c", line 153: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../Source/halGPIO.c", line 154: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../Source/halGPIO.c", line 191: error #20: identifier "Exit" is undefined
+"../Source/halGPIO.c", line 191: error #66: expected a ";"
+"../Source/halGPIO.c", line 215: warning #12-D: parsing restarts here after previous syntax error
+"../Source/halGPIO.c", line 168: remark #1538-D: (ULP 10.1) ISR PBs_handler calls function delay. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../Source/halGPIO.c", line 224: remark #1538-D: (ULP 10.1) ISR Keypad_handler calls function delay. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../Source/halGPIO.c", line 230: remark #1538-D: (ULP 10.1) ISR Keypad_handler calls function findKeyPressed. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+5 errors detected in the compilation of "../Source/halGPIO.c".
+gmake: *** [Source/halGPIO.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LAB3DCS ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../Source/halGPIO.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=16 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Yoni/IAR files/DCS/Lab3/Code/PreparationCode/LAB3DCS" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --advice:power=all --define=__MSP430FG4619__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Source/halGPIO.d_raw" --obj_directory="Source"  "../Source/halGPIO.c"
+
+>> Compilation failure
+Source/subdir_rules.mk:23: recipe for target 'Source/halGPIO.obj' failed
+"../Source/halGPIO.c", line 19: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../Source/halGPIO.c", line 115: error #20: identifier "PBs0_2" is undefined
+"../Source/halGPIO.c", line 119: error #20: identifier "PBs0_2" is undefined
+"../Source/halGPIO.c", line 123: warning #515-D: a value of type "char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../Source/halGPIO.c", line 124: warning #515-D: a value of type "char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../Source/halGPIO.c", line 128: error #66: expected a ";"
+"../Source/halGPIO.c", line 142: warning #515-D: a value of type "char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../Source/halGPIO.c", line 153: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../Source/halGPIO.c", line 154: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../Source/halGPIO.c", line 191: error #20: identifier "Exit" is undefined
+"../Source/halGPIO.c", line 191: error #66: expected a ";"
+"../Source/halGPIO.c", line 215: warning #12-D: parsing restarts here after previous syntax error
+"../Source/halGPIO.c", line 168: remark #1538-D: (ULP 10.1) ISR PBs_handler calls function delay. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../Source/halGPIO.c", line 224: remark #1538-D: (ULP 10.1) ISR Keypad_handler calls function delay. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../Source/halGPIO.c", line 230: remark #1538-D: (ULP 10.1) ISR Keypad_handler calls function findKeyPressed. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+5 errors detected in the compilation of "../Source/halGPIO.c".
+gmake: *** [Source/halGPIO.obj] Error 1
+'Building file: "../Source/main.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=16 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Yoni/IAR files/DCS/Lab3/Code/PreparationCode/LAB3DCS" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --advice:power=all --define=__MSP430FG4619__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Source/main.d_raw" --obj_directory="Source"  "../Source/main.c"
+"../Source/main.c", line 4: remark #1535-D: (ULP 8.1) variable "state" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../Source/main.c", line 5: remark #1535-D: (ULP 8.1) variable "lpm_mode" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+'Finished building: "../Source/main.c"'
+ 
+'Building file: "../Source/api.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=16 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Yoni/IAR files/DCS/Lab3/Code/PreparationCode/LAB3DCS" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --advice:power=all --define=__MSP430FG4619__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Source/api.d_raw" --obj_directory="Source"  "../Source/api.c"
+"../Source/api.c", line 75: remark #2553-D: (ULP 14.1) Array index (involving "numOfletters") of type "int". Recommend using "unsigned int"
+"../Source/api.c", line 90: remark #2553-D: (ULP 14.1) Array index (involving "numOfletters") of type "int". Recommend using "unsigned int"
+"../Source/api.c", line 103: remark #2553-D: (ULP 14.1) Array index (involving "numOfletters") of type "int". Recommend using "unsigned int"
+"../Source/api.c", line 133: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../Source/api.c", line 140: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../Source/api.c", line 159: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../Source/api.c", line 204: warning #169-D: argument of type "const char *" is incompatible with parameter of type "char *"
+"../Source/api.c", line 177: remark #1535-D: (ULP 8.1) variable "numToWrite" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../Source/api.c", line 6: remark #1535-D: (ULP 8.1) variable "resetState1" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+'Finished building: "../Source/api.c"'
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LAB3DCS ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../Source/halGPIO.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=16 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Yoni/IAR files/DCS/Lab3/Code/PreparationCode/LAB3DCS" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --advice:power=all --define=__MSP430FG4619__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Source/halGPIO.d_raw" --obj_directory="Source"  "../Source/halGPIO.c"
+
+>> Compilation failure
+Source/subdir_rules.mk:23: recipe for target 'Source/halGPIO.obj' failed
+"../Source/halGPIO.c", line 19: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../Source/halGPIO.c", line 123: warning #515-D: a value of type "char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../Source/halGPIO.c", line 124: warning #515-D: a value of type "char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../Source/halGPIO.c", line 128: error #66: expected a ";"
+"../Source/halGPIO.c", line 142: warning #515-D: a value of type "char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../Source/halGPIO.c", line 153: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../Source/halGPIO.c", line 154: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../Source/halGPIO.c", line 191: error #20: identifier "Exit" is undefined
+"../Source/halGPIO.c", line 191: error #66: expected a ";"
+"../Source/halGPIO.c", line 215: warning #12-D: parsing restarts here after previous syntax error
+"../Source/halGPIO.c", line 168: remark #1538-D: (ULP 10.1) ISR PBs_handler calls function delay. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../Source/halGPIO.c", line 224: remark #1538-D: (ULP 10.1) ISR Keypad_handler calls function delay. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../Source/halGPIO.c", line 230: remark #1538-D: (ULP 10.1) ISR Keypad_handler calls function findKeyPressed. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+3 errors detected in the compilation of "../Source/halGPIO.c".
+gmake: *** [Source/halGPIO.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LAB3DCS ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../Source/halGPIO.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=16 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Yoni/IAR files/DCS/Lab3/Code/PreparationCode/LAB3DCS" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --advice:power=all --define=__MSP430FG4619__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Source/halGPIO.d_raw" --obj_directory="Source"  "../Source/halGPIO.c"
+
+>> Compilation failure
+Source/subdir_rules.mk:23: recipe for target 'Source/halGPIO.obj' failed
+"../Source/halGPIO.c", line 19: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../Source/halGPIO.c", line 123: warning #515-D: a value of type "char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../Source/halGPIO.c", line 124: warning #515-D: a value of type "char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../Source/halGPIO.c", line 142: warning #515-D: a value of type "char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../Source/halGPIO.c", line 153: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../Source/halGPIO.c", line 154: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../Source/halGPIO.c", line 191: error #20: identifier "Exit" is undefined
+"../Source/halGPIO.c", line 191: error #66: expected a ";"
+"../Source/halGPIO.c", line 215: warning #12-D: parsing restarts here after previous syntax error
+"../Source/halGPIO.c", line 168: remark #1538-D: (ULP 10.1) ISR PBs_handler calls function delay. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../Source/halGPIO.c", line 224: remark #1538-D: (ULP 10.1) ISR Keypad_handler calls function delay. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../Source/halGPIO.c", line 230: remark #1538-D: (ULP 10.1) ISR Keypad_handler calls function findKeyPressed. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+2 errors detected in the compilation of "../Source/halGPIO.c".
+gmake: *** [Source/halGPIO.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LAB3DCS ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../Source/halGPIO.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=16 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Yoni/IAR files/DCS/Lab3/Code/PreparationCode/LAB3DCS" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --advice:power=all --define=__MSP430FG4619__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Source/halGPIO.d_raw" --obj_directory="Source"  "../Source/halGPIO.c"
+"../Source/halGPIO.c", line 19: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../Source/halGPIO.c", line 123: warning #515-D: a value of type "char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../Source/halGPIO.c", line 124: warning #515-D: a value of type "char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../Source/halGPIO.c", line 142: warning #515-D: a value of type "char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../Source/halGPIO.c", line 153: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../Source/halGPIO.c", line 154: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../Source/halGPIO.c", line 168: remark #1538-D: (ULP 10.1) ISR PBs_handler calls function delay. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../Source/halGPIO.c", line 224: remark #1538-D: (ULP 10.1) ISR Keypad_handler calls function delay. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../Source/halGPIO.c", line 230: remark #1538-D: (ULP 10.1) ISR Keypad_handler calls function findKeyPressed. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+'Finished building: "../Source/halGPIO.c"'
+ 
+'Building target: "LAB3DCS.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=16 --advice:power=all --define=__MSP430FG4619__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"LAB3DCS.map" --heap_size=80 --stack_size=80 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="LAB3DCS_linkInfo.xml" --use_hw_mpy=16 --rom_model -o "LAB3DCS.out" "./Source/api.obj" "./Source/bsp.obj" "./Source/halGPIO.obj" "./Source/main.obj" "../lnk_msp430fg4619.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 4 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 5 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 6 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 7 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 8 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "LAB3DCS.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LAB3DCS ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'LAB3DCS.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LAB3DCS ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'LAB3DCS.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LAB3DCS ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../Source/main.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=16 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Yoni/IAR files/DCS/Lab3/Code/PreparationCode/LAB3DCS" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --advice:power=all --define=__MSP430FG4619__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Source/main.d_raw" --obj_directory="Source"  "../Source/main.c"
+"../Source/main.c", line 4: remark #1535-D: (ULP 8.1) variable "state" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../Source/main.c", line 5: remark #1535-D: (ULP 8.1) variable "lpm_mode" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+'Finished building: "../Source/main.c"'
+ 
+'Building file: "../Source/bsp.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=16 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Yoni/IAR files/DCS/Lab3/Code/PreparationCode/LAB3DCS" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --advice:power=all --define=__MSP430FG4619__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Source/bsp.d_raw" --obj_directory="Source"  "../Source/bsp.c"
+"../Source/bsp.c", line 62: warning #515-D: a value of type "volatile unsigned char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+'Finished building: "../Source/bsp.c"'
+ 
+'Building file: "../Source/halGPIO.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=16 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Yoni/IAR files/DCS/Lab3/Code/PreparationCode/LAB3DCS" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --advice:power=all --define=__MSP430FG4619__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Source/halGPIO.d_raw" --obj_directory="Source"  "../Source/halGPIO.c"
+"../Source/halGPIO.c", line 19: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../Source/halGPIO.c", line 123: warning #515-D: a value of type "char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../Source/halGPIO.c", line 124: warning #515-D: a value of type "char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../Source/halGPIO.c", line 142: warning #515-D: a value of type "char *" cannot be assigned to an entity of type "__SFR_FARPTR"
+"../Source/halGPIO.c", line 153: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../Source/halGPIO.c", line 154: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../Source/halGPIO.c", line 168: remark #1538-D: (ULP 10.1) ISR PBs_handler calls function delay. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../Source/halGPIO.c", line 224: remark #1538-D: (ULP 10.1) ISR Keypad_handler calls function delay. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../Source/halGPIO.c", line 230: remark #1538-D: (ULP 10.1) ISR Keypad_handler calls function findKeyPressed. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+'Finished building: "../Source/halGPIO.c"'
+ 
+'Building file: "../Source/api.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=16 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Yoni/IAR files/DCS/Lab3/Code/PreparationCode/LAB3DCS" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --advice:power=all --define=__MSP430FG4619__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Source/api.d_raw" --obj_directory="Source"  "../Source/api.c"
+"../Source/api.c", line 75: remark #2553-D: (ULP 14.1) Array index (involving "numOfletters") of type "int". Recommend using "unsigned int"
+"../Source/api.c", line 90: remark #2553-D: (ULP 14.1) Array index (involving "numOfletters") of type "int". Recommend using "unsigned int"
+"../Source/api.c", line 103: remark #2553-D: (ULP 14.1) Array index (involving "numOfletters") of type "int". Recommend using "unsigned int"
+"../Source/api.c", line 133: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../Source/api.c", line 140: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../Source/api.c", line 159: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../Source/api.c", line 204: warning #169-D: argument of type "const char *" is incompatible with parameter of type "char *"
+"../Source/api.c", line 177: remark #1535-D: (ULP 8.1) variable "numToWrite" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../Source/api.c", line 6: remark #1535-D: (ULP 8.1) variable "resetState1" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+'Finished building: "../Source/api.c"'
+ 
+'Building target: "LAB3DCS.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=16 --advice:power=all --define=__MSP430FG4619__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"LAB3DCS.map" --heap_size=80 --stack_size=80 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="LAB3DCS_linkInfo.xml" --use_hw_mpy=16 --rom_model -o "LAB3DCS.out" "./Source/api.obj" "./Source/bsp.obj" "./Source/halGPIO.obj" "./Source/main.obj" "../lnk_msp430fg4619.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 4 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 5 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 6 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 7 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 8 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "LAB3DCS.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LAB3DCS ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'LAB3DCS.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LAB3DCS ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../Source/api.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=16 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Yoni/IAR files/DCS/Lab3/Code/PreparationCode/LAB3DCS" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --advice:power=all --define=__MSP430FG4619__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Source/api.d_raw" --obj_directory="Source"  "../Source/api.c"
+"../Source/api.c", line 75: remark #2553-D: (ULP 14.1) Array index (involving "numOfletters") of type "int". Recommend using "unsigned int"
+"../Source/api.c", line 90: remark #2553-D: (ULP 14.1) Array index (involving "numOfletters") of type "int". Recommend using "unsigned int"
+"../Source/api.c", line 103: remark #2553-D: (ULP 14.1) Array index (involving "numOfletters") of type "int". Recommend using "unsigned int"
+"../Source/api.c", line 133: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../Source/api.c", line 140: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../Source/api.c", line 159: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../Source/api.c", line 204: warning #169-D: argument of type "const char *" is incompatible with parameter of type "char *"
+"../Source/api.c", line 177: remark #1535-D: (ULP 8.1) variable "numToWrite" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../Source/api.c", line 275: remark #1535-D: (ULP 8.1) variable "numOfChars" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../Source/api.c", line 6: remark #1535-D: (ULP 8.1) variable "resetState1" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+'Finished building: "../Source/api.c"'
+ 
+'Building target: "LAB3DCS.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=16 --advice:power=all --define=__MSP430FG4619__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"LAB3DCS.map" --heap_size=80 --stack_size=80 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="LAB3DCS_linkInfo.xml" --use_hw_mpy=16 --rom_model -o "LAB3DCS.out" "./Source/api.obj" "./Source/bsp.obj" "./Source/halGPIO.obj" "./Source/main.obj" "../lnk_msp430fg4619.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 4 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 5 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 6 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 7 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 8 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "LAB3DCS.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LAB3DCS ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../Source/api.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=16 --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Yoni/IAR files/DCS/Lab3/Code/PreparationCode/LAB3DCS" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --advice:power=all --define=__MSP430FG4619__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Source/api.d_raw" --obj_directory="Source"  "../Source/api.c"
+"../Source/api.c", line 75: remark #2553-D: (ULP 14.1) Array index (involving "numOfletters") of type "int". Recommend using "unsigned int"
+"../Source/api.c", line 90: remark #2553-D: (ULP 14.1) Array index (involving "numOfletters") of type "int". Recommend using "unsigned int"
+"../Source/api.c", line 103: remark #2553-D: (ULP 14.1) Array index (involving "numOfletters") of type "int". Recommend using "unsigned int"
+"../Source/api.c", line 133: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../Source/api.c", line 140: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../Source/api.c", line 159: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../Source/api.c", line 204: warning #169-D: argument of type "const char *" is incompatible with parameter of type "char *"
+"../Source/api.c", line 177: remark #1535-D: (ULP 8.1) variable "numToWrite" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../Source/api.c", line 275: remark #1535-D: (ULP 8.1) variable "numOfChars" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../Source/api.c", line 6: remark #1535-D: (ULP 8.1) variable "resetState1" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+'Finished building: "../Source/api.c"'
+ 
+'Building target: "LAB3DCS.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=16 --advice:power=all --define=__MSP430FG4619__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"LAB3DCS.map" --heap_size=80 --stack_size=80 --cinit_hold_wdt=on -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="LAB3DCS_linkInfo.xml" --use_hw_mpy=16 --rom_model -o "LAB3DCS.out" "./Source/api.obj" "./Source/bsp.obj" "./Source/halGPIO.obj" "./Source/main.obj" "../lnk_msp430fg4619.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 4 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 5 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 6 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 7 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 8 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "LAB3DCS.out"'
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project LAB3DCS ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'LAB3DCS.out' is up to date.
+
+**** Build Finished ****

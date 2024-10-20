@@ -8,12 +8,12 @@ void GPIOconfig(void){
   WDTCTL = WDTHOLD | WDTPW;		// Stop WDT
    
   // PushButtons Setup
-  PBsArrPortSel &= ~PBs0_2;
-  PBsArrPortDir &= ~PBs0_2;
+  PBsArrPortSel &= ~PBs0_3;
+  PBsArrPortDir &= ~PBs0_3;
   PBsArrIntEdgeSel |= (PB0 + PB1);          // pull-up mode
-  PBsArrIntEdgeSel &= ~(PB2);         // pull-down mode
-  PBsArrIntEn |= PBs0_2;
-  PBsArrIntPend &= ~PBs0_2;            // clear pending interrupts
+  PBsArrIntEdgeSel &= ~(PB2 + PB3);         // pull-down mode
+  PBsArrIntEn |= PBs0_3;
+  PBsArrIntPend &= ~PBs0_3;            // clear pending interrupts
 
   //LCD Setup
    LCDDataArrPort      &= ~LCDDataEntries;
@@ -56,7 +56,7 @@ void TIMERconfig(void){
 //-------------------------------------------------------------------------------------
 void DMAconfig(void){
     DMACTL0 = DMA0TSEL_0 + DMA1TSEL_8; //first channel is for state 2 SW trigger, Second channel is for state 3 , timer triggered
-    DMA0CTL = DMADT_1 + DMADSTINCR_3 + DMASRCINCR_3 + DMADSTBYTE + DMASRCBYTE + DMAIE; // block , byte byte , interrupt enable
+    DMA0CTL = DMADT_1 + DMADSTBYTE + DMASRCBYTE + DMAIE; // block , byte byte , interrupt enable
     DMA1CTL = DMADT_1 + DMADSTBYTE + DMASRCBYTE + DMAIE; // block , byte byte , interrupt enable
     DMA1SZ = 1;
     DMA1DA = &LEDsPortOut;

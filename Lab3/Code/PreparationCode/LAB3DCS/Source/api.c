@@ -158,13 +158,13 @@ char DMAMerge(char* str, char firstNum, char secondNum){
     char i;
     for (i = 0; i<8; i++){
         if (data_matrix_word_sizes[firstNum][i]>0){
-            ConfigDMA0ForStart(str + dstOff , data_matrix[firstNum] + offFirst , data_matrix_word_sizes[firstNum][i]);
+            ConfigDMA0ForStart(str + dstOff , data_matrix[firstNum] + offFirst , data_matrix_word_sizes[firstNum][i] , 0 , 0); //00for counting increment
             dstOff += data_matrix_word_sizes[firstNum][i];
             offFirst += data_matrix_word_sizes[firstNum][i];
             trigerDMA0();
         }
         if (data_matrix_word_sizes[secondNum][i]>0){
-            ConfigDMA0ForStart(str + dstOff , data_matrix[secondNum] + offSecond , data_matrix_word_sizes[secondNum][i]);
+            ConfigDMA0ForStart(str + dstOff , data_matrix[secondNum] + offSecond , data_matrix_word_sizes[secondNum][i] , 0 , 0);//00for counting increment
             dstOff += data_matrix_word_sizes[secondNum][i];
             offSecond += data_matrix_word_sizes[secondNum][i];
             trigerDMA0();
@@ -246,4 +246,36 @@ void LEDsByDMA(void){
     }
     disableTimerB();
     clrLEDS();
+}
+
+
+char countChars (char* str){
+    char i=0;
+    while (str[i]!='\0'){
+        i++;
+    }
+    return i;
+}
+
+void writeStrMirrorToLCD(char* str){ //toScroll press '*'
+    lcd_clear();
+    lcd_home();
+    lcd_writeStrLimit(str , 16);
+    lcd_home();
+    lcd_new_line;
+    lcd_writeStrLimit(str+16 , 16);
+}
+
+void MirrorByDMA(void){
+
+    disablePBsInterrupts();
+    char strMirror[156];
+    char str[ ] = "Google Colaboratory is a free Jupyter notebook environment that runs on Google’s cloud servers, letting the user leverage backend hardware like GPUs and TPUs";
+    //char numOfChars = countChars(str);
+    char numOfChars = 156;
+    ConfigDMA0ForStart(strMirror , str + numOfChars , numOfChars , 1 , 0); //10for decrement source increment dst
+    trigerDMA0();
+    writeStrMirrorToLCD(strMirror);
+    enablePBsInterrupts();
+    state = state0;
 }

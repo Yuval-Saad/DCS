@@ -7,11 +7,14 @@ extern void PrepareLCDState1(void);
 extern void WriteWord(void);
 extern void Merge(void);
 extern void LEDsByDMA(void);
+extern void MirrorByDMA(void);
 
 void PrepareLCDState2(void);
 void PromptTwoNums(char*, char*);
 char DMAMerge(char*, char , char);
 void printToLDCScrolling(char* , char);
+void writeStrMirrorToLCD(char*);
+char countChars (char* );
 
 
 #endif

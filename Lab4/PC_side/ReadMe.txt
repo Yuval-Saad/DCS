@@ -1,0 +1,2 @@
+We have only one file in the PC_side of out application:
+PCsideUART.py : Is responsible for all the application and the communication with the MCU. Both send and receive. Can be represented with 3 states as states in the pre_lab4 file.

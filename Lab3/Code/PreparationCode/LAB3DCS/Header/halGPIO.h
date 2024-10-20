@@ -94,7 +94,7 @@ extern void enable_interrupts();
 extern void disable_interrupts();
 extern void disablePBsInterrupts();
 extern void enablePBsInterrupts();
-extern void ConfigDMA0ForStart(char* , char* , char);
+extern void ConfigDMA0ForStart(char* , char* , char , char , char);
 extern void ConfigDMA1ForStart(char*);
 extern void trigerDMA0(void);
 extern void lcd_writeStrLimit(char *, char);

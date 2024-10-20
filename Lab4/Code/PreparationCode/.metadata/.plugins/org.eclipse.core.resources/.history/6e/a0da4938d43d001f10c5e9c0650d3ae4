@@ -1,0 +1,23 @@
+#ifndef _api_H_
+#define _api_H_
+
+#include  "../header/halGPIO.h"     // private library - HAL layer
+
+extern void getX(void);
+extern void buzzGen(void);
+
+void mul10(unsigned int*);
+
+char DMAMerge(char*, char , char);
+void printToLDCScrolling(char* , char);
+void writeStrMirrorToLCD(char*);
+char countChars (char* );
+
+#endif
+
+
+
+
+
+
+

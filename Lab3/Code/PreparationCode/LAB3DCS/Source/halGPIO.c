@@ -112,17 +112,30 @@ void rstTimerB(void){
 }
 
 void disablePBsInterrupts(){
-    PBsArrIntEn &= ~PBs0_2;
+    PBsArrIntEn &= ~PBs0_3;
 }
 
 void enablePBsInterrupts(){
-    PBsArrIntEn |= PBs0_2;
+    PBsArrIntEn |= PBs0_3;
 }
 
-void ConfigDMA0ForStart(char* dst , char* src , char size){
+void ConfigDMA0ForStart(char* dst , char* src , char size , char srcDir , char dstDir){
     DMA0DA = dst;
     DMA0SA = src;
     DMA0SZ = size;
+    if (srcDir == 0) //incremrnt
+        DMA0CTL |= DMASRCINCR_3;
+    else{
+        DMA0CTL &= ~DMASRCINCR_3;
+        DMA0CTL |= DMASRCINCR_2;
+    }
+    if(dstDir == 0) //increment
+        DMA0CTL |= DMADSTINCR_3;
+    else{
+        DMA0CTL &= ~DMADSTINCR_3;
+        DMA0CTL |= DMADSTINCR_2;
+
+    }
 }
 
 extern void ConfigDMA1ForStart(char* src){
@@ -170,13 +183,13 @@ extern void clrLEDS(void){
 	  PBsArrIntPend &= ~PB2;
     }
 	//for real time
-//    else if(PBsArrIntPend & PB3){
-//      state = state4;
-//      PBsArrIntPend &= ~PB3;
-//    }
+    else if(PBsArrIntPend & PB3){
+      state = state4;
+      PBsArrIntPend &= ~PB3;
+    }
 //---------------------------------------------------------------------
-//            Exit from a given LPM 
-//---------------------------------------------------------------------	
+//            Exit from a given LPM
+//---------------------------------------------------------------------
         switch(lpm_mode){
 		case mode0:
 		 LPM0_EXIT; // must be called from ISR only

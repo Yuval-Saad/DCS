@@ -1,0 +1,23 @@
+
+**** Build of configuration Debug for project DCSLab4 ****
+
+"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+'Building file: "../Source/halGPIO.c"'
+'Invoking: MSP430 Compiler'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="C:/ti/ccsv7/ccs_base/msp430/include" --include_path="C:/Yoni/IAR files/DCS/Lab4/Code/PreparationCode/DCSLab4" --include_path="C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="Source/halGPIO.d_raw" --obj_directory="Source"  "../Source/halGPIO.c"
+"../Source/halGPIO.c", line 20: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../Source/halGPIO.c", line 186: remark #1538-D: (ULP 10.1) ISR USCI0RX_ISR calls function lcd_cmd. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../Source/halGPIO.c", line 217: remark #1538-D: (ULP 10.1) ISR PBs_handler calls function delay. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"..\Source\..\header\../header/app.h", line 6: remark #1535-D: (ULP 8.1) variable "counter" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+'Finished building: "../Source/halGPIO.c"'
+ 
+'Building target: "DCSLab4.out"'
+'Invoking: MSP430 Linker'
+"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"DCSLab4.map" --heap_size=80 --stack_size=80 -i"C:/ti/ccsv7/ccs_base/msp430/include" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/lib" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.6.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="DCSLab4_linkInfo.xml" --use_hw_mpy=none --rom_model -o "DCSLab4.out" "./Source/api.obj" "./Source/bsp.obj" "./Source/halGPIO.obj" "./Source/main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: "DCSLab4.out"'
+ 
+
+**** Build Finished ****

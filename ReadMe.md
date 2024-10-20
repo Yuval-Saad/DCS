@@ -1,44 +1,44 @@
 # Stepper Motor Control System with Joystick & Remote Control
 
 ## Project Overview
-This project is the final task for the Digital Computer Structures course, aimed at developing a stepper motor control system that can be operated manually via a joystick and remotely through a personal computer using serial communication.
+This project is the final task for the Digital Computer Structures course. It involves designing and implementing a stepper motor control system that can be operated manually using a joystick and remotely through a personal computer via serial communication.
 
-The project was implemented on an MSP430G2553 microcontroller using the C programming language in CCS. The system features a GUI for remote control, utilizing FSM (Finite State Machine) architecture, with both hardware and software components to execute a set of defined commands.
+The system is built using the MSP430G2553 microcontroller, coded in C using Code Composer Studio (CCS). The project integrates multiple hardware and software components, utilizing a Finite State Machine (FSM) for smooth control.
 
 ## Features
-- *Manual Control via Joystick*: The joystick controls the stepper motor’s position, rotating in accordance with the joystick's movements.
-- *Remote Control via GUI*: Control the motor from a computer using a simple, user-friendly interface. The GUI communicates with the microcontroller via UART, allowing remote command execution.
-- *Real-time Painter App*: A drawing tool controlled by the joystick, where the user can switch between drawing, erasing, and neutral modes.
-- *Stepper Motor Calibration*: Calibrate the stepper motor and display the number of steps per revolution on the computer screen.
-- *Script Mode*: Execute predefined high-level commands from a script, stored in the MSP430’s FLASH memory.
+- *Manual Control*: Operate the stepper motor using a joystick to adjust its angle in real-time.
+- *Remote Control*: The motor can also be controlled from a personal computer using a graphical user interface (GUI) over UART.
+- *Real-time Painter App*: A joystick-controlled painter application that allows switching between writing, erasing, and neutral modes.
+- *Motor Calibration*: Calibrate the stepper motor to calculate the number of steps and the angle per step.
+- *Script Mode*: Execute pre-defined commands stored in the microcontroller’s FLASH memory.
 
 ## Technologies Used
-- *MSP430G2553 Microcontroller*: The primary hardware controller.
-- *CCS (Code Composer Studio)*: The development environment used for programming the microcontroller in C.
-- *PySimpleGUI*: The library used for building the GUI interface.
-- *UART Communication*: For communication between the microcontroller and the computer.
+- *MSP430G2553 Microcontroller*: The core hardware used for the motor control.
+- *Code Composer Studio (CCS)*: The development environment for programming the MSP430 in C.
+- *PySimpleGUI*: The library used for building the GUI on the computer.
+- *UART Communication*: Allows seamless communication between the microcontroller and the PC.
 
 ## Installation and Setup
 1. Clone this repository:
     bash
     git clone https://github.com/yourusername/stepper-motor-control.git
     
-2. Open the project in CCS.
-3. Build and flash the project to your MSP430G2553 microcontroller.
+2. Open the project in Code Composer Studio (CCS).
+3. Build and upload the project to the MSP430G2553 microcontroller.
 4. Install the required Python dependencies:
     bash
     pip install PySimpleGUI
     
-5. Run the GUI application from the gui directory:
+5. Run the GUI application:
     bash
     python gui.py
     
 
 ## Usage
-- *Manual Mode*: Use the joystick to manually control the motor's movements.
-- *Remote Mode*: Use the GUI on your computer to send commands to the microcontroller and control the motor remotely.
-- *Painter*: Use the joystick to draw on the screen, switching between different modes such as writing and erasing.
-- *Script Mode*: Load a script into the microcontroller’s FLASH memory and execute it.
+- *Manual Mode*: Use the joystick to control the motor’s movements.
+- *Remote Mode*: Send commands to the microcontroller using the GUI interface on the PC.
+- *Painter Mode*: Draw or erase on the screen using the joystick.
+- *Script Mode*: Upload and execute predefined scripts from the PC to the microcontroller.
 
 ## Authors
 - Yonatan Arama

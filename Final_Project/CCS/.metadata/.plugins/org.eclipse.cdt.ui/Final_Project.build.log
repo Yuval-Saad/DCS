@@ -1,8 +1,0 @@
-
-**** Build of configuration Debug for project Final_Project ****
-
-"C:\\ti\\ccsv7\\utils\\bin\\gmake" -k -j 8 all -O 
- 
-gmake[1]: 'Final_Project.out' is up to date.
-
-**** Build Finished ****

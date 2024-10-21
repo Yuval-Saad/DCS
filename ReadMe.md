@@ -42,4 +42,4 @@ The system is built using the MSP430G2553 microcontroller, coded in C using Code
 
 ## Authors
 - Yonatan Arama
-- Yuval Yaacov Said
+- Yuval Saad
